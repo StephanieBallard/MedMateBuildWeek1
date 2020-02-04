@@ -9,6 +9,8 @@
 import UIKit
 
 class ThemeViewController: UIViewController {
+    
+    var themeHelper: ThemeHelper?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +18,34 @@ class ThemeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func darkThemeSelected(_ sender: UIButton) {
+        themeHelper?.setThemePreferenceToDark()
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func lightThemeSelected(_ sender: UIButton) {
+        themeHelper?.setThemePreferenceToTeal()
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func setTheme() {
+        guard let themePreference = themeHelper?.themePreference else { return }
+        var backgroundColor: UIColor!
+        
+        switch themePreference {
+        case "dark":
+            backgroundColor = .darkGray
+        case "teal":
+            backgroundColor = .systemTeal
+        default:
+            break
+        }
+        
+        view.backgroundColor = backgroundColor
+        
+    }
+    
+    
     /*
     // MARK: - Navigation
 

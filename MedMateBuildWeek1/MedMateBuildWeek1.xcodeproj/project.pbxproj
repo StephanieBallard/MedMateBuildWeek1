@@ -18,6 +18,7 @@
 		5AF3F15523E8CB0C003D4B6D /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F15423E8CB0C003D4B6D /* ThemeViewController.swift */; };
 		5AF3F15723E8CB16003D4B6D /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F15623E8CB16003D4B6D /* NotesViewController.swift */; };
 		5AF3F15923E8CDE8003D4B6D /* MedicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F15823E8CDE8003D4B6D /* MedicationTableViewCell.swift */; };
+		5AF3F15B23E8E490003D4B6D /* ThemeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F15A23E8E490003D4B6D /* ThemeHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5AF3F15423E8CB0C003D4B6D /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		5AF3F15623E8CB16003D4B6D /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		5AF3F15823E8CDE8003D4B6D /* MedicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationTableViewCell.swift; sourceTree = "<group>"; };
+		5AF3F15A23E8E490003D4B6D /* ThemeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				5AF3F13A23E8C906003D4B6D /* AppDelegate.swift */,
 				5AF3F13C23E8C906003D4B6D /* SceneDelegate.swift */,
 				5AF3F14023E8C906003D4B6D /* Main.storyboard */,
+				5AF3F15A23E8E490003D4B6D /* ThemeHelper.swift */,
 				5AF3F15823E8CDE8003D4B6D /* MedicationTableViewCell.swift */,
 				5AF3F15423E8CB0C003D4B6D /* ThemeViewController.swift */,
 				5AF3F15623E8CB16003D4B6D /* NotesViewController.swift */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AF3F15B23E8E490003D4B6D /* ThemeHelper.swift in Sources */,
 				5AF3F15923E8CDE8003D4B6D /* MedicationTableViewCell.swift in Sources */,
 				5AF3F15523E8CB0C003D4B6D /* ThemeViewController.swift in Sources */,
 				5AF3F13B23E8C906003D4B6D /* AppDelegate.swift in Sources */,
