@@ -30,6 +30,8 @@ class NotesViewController: UIViewController {
             
             ].forEach{ $0.isActive = true}
         
+        textView.font = UIFont.preferredFont(forTextStyle: .headline)
+        
         textView.delegate = self
         textView.isScrollEnabled = false
         

@@ -21,6 +21,12 @@ class MedicationsListViewController: UIViewController, UITableViewDelegate, UITa
         medicationsTableView.dataSource = self
         
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        medicationsTableView.reloadData()
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return meds.count
@@ -49,8 +55,9 @@ class MedicationsListViewController: UIViewController, UITableViewDelegate, UITa
                 //notesVC.delegate = self
             }
         } else if segue.identifier == "AddMedicationShowSegue" {
-            if let addMedicationsVC = segue.destination as? AddMedicationDetailsViewController {
-                //addMedicationsVC.meds = meds[indexPath.row]
+            if let indexPath = medicationsTableView.indexPathForSelectedRow,
+            let addMedicationsVC = segue.destination as? AddMedicationDetailsViewController {
+                addMedicationsVC.med = meds[indexPath.row]
             }
         }
     }

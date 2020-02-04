@@ -10,6 +10,9 @@ import UIKit
 
 class AddMedicationDetailsViewController: UIViewController {
 
+    var med: Medication?
+    
+    
     @IBOutlet weak var medicationNameLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var dosageLabel: UILabel!

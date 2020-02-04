@@ -20,3 +20,6 @@ struct Medication {
     }
     
 }
+//saving to pers func should be put inside a create func, every time we create it should be saved to persistence
+//when we create a note or save a medacine we call the save to persitence
+//create save to per fun and put it inside create funcs
