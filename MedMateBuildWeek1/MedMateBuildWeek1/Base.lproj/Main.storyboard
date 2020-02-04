@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s4j-Wc-TgE">
-                                <rect key="frame" x="20" y="88" width="374" height="239"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="house.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="s4j-Wc-TgE">
+                                <rect key="frame" x="20" y="87.5" width="374" height="238.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="239" id="t0e-RB-B3R"/>
                                     <constraint firstAttribute="width" constant="374" id="tYW-hN-6of"/>
@@ -309,4 +309,7 @@
             <point key="canvasLocation" x="76.811594202898561" y="44.866071428571423"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="house.fill" catalog="system" width="64" height="52"/>
+    </resources>
 </document>
