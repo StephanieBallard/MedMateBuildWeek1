@@ -19,6 +19,7 @@
                                 <rect key="frame" x="20" y="88" width="374" height="239"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="239" id="t0e-RB-B3R"/>
+                                    <constraint firstAttribute="width" constant="374" id="tYW-hN-6of"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mma-V3-OwQ">
@@ -175,6 +176,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dosageLabel" destination="c3a-FU-gwC" id="6Pj-do-b0c"/>
+                        <outlet property="dosageTextField" destination="Sft-SQ-c1v" id="3eu-ND-txV"/>
+                        <outlet property="medicationNameLabel" destination="7lR-ai-oJu" id="Obu-Z1-3EE"/>
+                        <outlet property="nameTextField" destination="FU2-aD-AgZ" id="AQb-lO-grS"/>
+                        <outlet property="scheduleReminderLabel" destination="W5I-hk-K3e" id="5mI-Yr-AJF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gou-Kr-Kqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

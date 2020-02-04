@@ -10,6 +10,13 @@ import UIKit
 
 class AddMedicationDetailsViewController: UIViewController {
 
+    @IBOutlet weak var medicationNameLabel: UILabel!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var dosageLabel: UILabel!
+    @IBOutlet weak var dosageTextField: UITextField!
+    @IBOutlet weak var scheduleReminderLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
