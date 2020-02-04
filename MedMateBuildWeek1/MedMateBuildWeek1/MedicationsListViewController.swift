@@ -27,12 +27,7 @@ class MedicationsListViewController: UIViewController, UITableViewDelegate, UITa
       }
       
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MedicationCell", for: indexPath)
-        
-        let medicationData = meds[indexPath.row]
-        
-        cell.textLabel?.text = medicationData.name
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MedicationCell", for: indexPath) as? MedicationTableViewCell else { return UITableViewCell() }
         
         return cell
         
@@ -45,14 +40,25 @@ class MedicationsListViewController: UIViewController, UITableViewDelegate, UITa
     }
     
     
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "AddPOIModalSegue" {
+//            if let addPOIVC = segue.destination as? AddPOIViewController {
+//                addPOIVC.delegate = self
+//            }
+//        } else if segue.identifier == "ShowPOIDetailSegue" {
+//            if let indexPath = tableView.indexPathForSelectedRow,
+//                let poiDetailVC = segue.destination as? POIDetailViewController {
+//                poiDetailVC.poi = poiModels[indexPath.row]
+//            }
+//        }
+//    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
