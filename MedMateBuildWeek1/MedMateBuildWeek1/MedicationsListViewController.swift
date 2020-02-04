@@ -38,6 +38,13 @@ class MedicationsListViewController: UIViewController, UITableViewDelegate, UITa
         
       }
 
+    @IBAction func notesForDoctorTapped(_ sender: UIBarButtonItem) {
+    }
+    
+    @IBAction func addMedicationTapped(_ sender: UIBarButtonItem) {
+    }
+    
+    
     /*
     // MARK: - Navigation
 
