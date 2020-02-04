@@ -42,23 +42,17 @@ class MedicationsListViewController: UIViewController, UITableViewDelegate, UITa
     
     
     // MARK: - Navigation
-
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "AddPOIModalSegue" {
-//            if let addPOIVC = segue.destination as? AddPOIViewController {
-//                addPOIVC.delegate = self
-//            }
-//        } else if segue.identifier == "ShowPOIDetailSegue" {
-//            if let indexPath = tableView.indexPathForSelectedRow,
-//                let poiDetailVC = segue.destination as? POIDetailViewController {
-//                poiDetailVC.poi = poiModels[indexPath.row]
-//            }
-//        }
-//    }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "NotesForDoctorShowSegue" {
+            if let notesVC = segue.destination as? NotesViewController {
+                //notesVC.delegate = self
+            }
+        } else if segue.identifier == "AddMedicationShowSegue" {
+            if let addMedicationsVC = segue.destination as? AddMedicationDetailsViewController {
+                //addMedicationsVC.meds = meds[indexPath.row]
+            }
+        }
+    }
 
 }

@@ -72,13 +72,13 @@
                                         <barButtonItem key="leftBarButtonItem" title="Notes For Doctor" id="Hph-zZ-wx4">
                                             <connections>
                                                 <action selector="notesForDoctorTapped:" destination="oZ9-2V-yZg" id="4bD-sY-P81"/>
-                                                <segue destination="3rx-4i-Iya" kind="show" id="3EW-3f-nTM"/>
+                                                <segue destination="3rx-4i-Iya" kind="show" identifier="NotesForDoctorShowSegue" id="3EW-3f-nTM"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Add Medication" id="s6R-BA-h8M">
                                             <connections>
                                                 <action selector="addMedicationTapped:" destination="oZ9-2V-yZg" id="T3I-3s-FA2"/>
-                                                <segue destination="hMT-bT-eJs" kind="show" identifier="ShowSegueAddMedication" id="Mct-CL-E5i"/>
+                                                <segue destination="hMT-bT-eJs" kind="show" identifier="AddMedicationShowSegue" id="Mct-CL-E5i"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
