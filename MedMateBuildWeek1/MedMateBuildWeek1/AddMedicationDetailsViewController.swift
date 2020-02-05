@@ -25,11 +25,8 @@ class AddMedicationDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
-//    var med: Medication?
-//var medsController: MedicineController?
     @IBAction func saveToMedicationListTapped(_ sender: UIButton) {
         guard let name = nameTextField.text,
             let dosage = dosageTextField.text,
@@ -43,14 +40,12 @@ class AddMedicationDetailsViewController: UIViewController {
         
         navigationController?.popViewController(animated: true)
         
-        //var dosageDouble = Double(dosage)
-        //if let 
     }
-    //TODO: unwrapp and convert to a double, Double(dosage) inside a variable and use that for our function
+    //TODO: unwrapp and convert to a double, Double(dosage) inside a variable and use that for our function //var dosageDouble = Double(dosage)
 
     /*
     // MARK: - Navigation
-
+     //TODO: segue
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
@@ -60,4 +55,3 @@ class AddMedicationDetailsViewController: UIViewController {
     */
 
 }
-//add med and create it working
