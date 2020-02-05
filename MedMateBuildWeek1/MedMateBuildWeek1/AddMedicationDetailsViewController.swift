@@ -28,8 +28,18 @@ class AddMedicationDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+//    var med: Medication?
+//var medsController: MedicineController?
     @IBAction func saveToMedicationListTapped(_ sender: UIButton) {
-        //guard let
+        guard let name = nameTextField.text,
+            let dosage = dosageTextField.text
+        name != "" && dosage != "" else { return }
+        
+        if let med = med {
+            medsController?.update(med: med, dosage: Double(dosage))
+        }
+        
+        //var dosageDouble = Double(dosage)
         //if let 
     }
     //TODO: unwrapp and convert to a double, Double(dosage) inside a variable and use that for our function

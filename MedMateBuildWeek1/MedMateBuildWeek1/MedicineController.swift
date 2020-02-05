@@ -47,6 +47,19 @@ class MedicineController {
         return medicationsURL
     }
    
+    func update(meds: Medication, name: String, dosage: Double) {
+        guard let index = medicines.firstIndex(of: meds) else { return }
+        
+        var scratch = meds
+        
+        scratch.name = name
+        scratch.dose = dosage
+        
+        medicines.remove(at: index)
+        medicines.insert(scratch, at: index)
+    }
+    
+    
     func saveToPersistence() {
         
         guard let fileURL = medicationListURL else { return }
