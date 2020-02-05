@@ -32,12 +32,16 @@ class AddMedicationDetailsViewController: UIViewController {
 //var medsController: MedicineController?
     @IBAction func saveToMedicationListTapped(_ sender: UIButton) {
         guard let name = nameTextField.text,
-            let dosage = dosageTextField.text
+            let dosage = dosageTextField.text,
         name != "" && dosage != "" else { return }
         
         if let med = med {
-            medsController?.update(med: med, dosage: Double(dosage))
+            medsController?.update(meds: med, name: name, dosage: Double(dosage)!)
+        } else {
+            medsController?.createMedicine(name: name, dose: Double(dosage)!)
         }
+        
+        navigationController?.popViewController(animated: true)
         
         //var dosageDouble = Double(dosage)
         //if let 
