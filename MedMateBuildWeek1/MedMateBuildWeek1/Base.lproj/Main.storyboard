@@ -86,7 +86,7 @@
                                 </items>
                             </navigationBar>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8ib-Gn-sGm" firstAttribute="trailing" secondItem="s4j-Wc-TgE" secondAttribute="trailing" constant="20" id="0th-po-xp4"/>
                             <constraint firstItem="oJ4-zx-Pz6" firstAttribute="leading" secondItem="8ib-Gn-sGm" secondAttribute="leading" id="2AZ-zR-FJM"/>
@@ -121,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="P3s-Pl-Oq3">
-                                <rect key="frame" x="47" y="144" width="320" height="608"/>
+                                <rect key="frame" x="47" y="141" width="320" height="614"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medication Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lR-ai-oJu">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
@@ -155,14 +155,17 @@
                                         <rect key="frame" x="0.0" y="326" width="320" height="216"/>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4o-ld-wWE">
-                                        <rect key="frame" x="0.0" y="572" width="320" height="36"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Save to Medication List"/>
+                                        <rect key="frame" x="0.0" y="572" width="320" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Save to Medication List">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="P3s-Pl-Oq3" firstAttribute="centerX" secondItem="Bmg-E5-yKb" secondAttribute="centerX" id="BZJ-Nf-C6j"/>
                             <constraint firstItem="P3s-Pl-Oq3" firstAttribute="centerY" secondItem="Bmg-E5-yKb" secondAttribute="centerY" id="oC6-ds-H9g"/>
@@ -210,16 +213,22 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hti-0D-6gO">
                                                 <rect key="frame" x="0.0" y="0.0" width="107" height="36"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Dark Theme"/>
+                                                <state key="normal" title="Dark Theme">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="darkThemeSelected:" destination="PQz-or-XTw" eventType="touchUpInside" id="cbm-FM-Gis"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCB-UU-rdx">
                                                 <rect key="frame" x="187" y="0.0" width="110" height="36"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <state key="normal" title="Light Theme"/>
+                                                <state key="normal" title="Light Theme">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="lightThemeSelected:" destination="PQz-or-XTw" eventType="touchUpInside" id="Uap-VY-YBi"/>
                                                 </connections>
@@ -229,7 +238,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VP1-eE-J28" firstAttribute="trailing" secondItem="yVv-Od-uv4" secondAttribute="trailing" constant="50" id="RCL-Tx-uiK"/>
                             <constraint firstItem="yVv-Od-uv4" firstAttribute="top" secondItem="VP1-eE-J28" secondAttribute="top" constant="50" id="TL9-qT-gTZ"/>

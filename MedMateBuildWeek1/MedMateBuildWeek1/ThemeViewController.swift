@@ -24,7 +24,7 @@ class ThemeViewController: UIViewController {
     }
     
     @IBAction func lightThemeSelected(_ sender: UIButton) {
-        themeHelper?.setThemePreferenceToTeal()
+        themeHelper?.setThemePreferenceToPink()
         dismiss(animated: true, completion: nil)
     }
     
@@ -35,8 +35,8 @@ class ThemeViewController: UIViewController {
         switch themePreference {
         case "dark":
             backgroundColor = .darkGray
-        case "teal":
-            backgroundColor = .systemTeal
+        case "pink":
+            backgroundColor = .systemPink
         default:
             break
         }
