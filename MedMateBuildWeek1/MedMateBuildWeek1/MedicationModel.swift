@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Medication {
+struct Medication: Codable, Equatable {
     var name: String
     var dose: Double
     var date: Date

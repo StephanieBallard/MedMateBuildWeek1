@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A602C4223EA29D100CB335A /* MedicineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A602C4123EA29D100CB335A /* MedicineController.swift */; };
 		5AF3F13B23E8C906003D4B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F13A23E8C906003D4B6D /* AppDelegate.swift */; };
 		5AF3F13D23E8C906003D4B6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F13C23E8C906003D4B6D /* SceneDelegate.swift */; };
 		5AF3F14223E8C906003D4B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF3F14023E8C906003D4B6D /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A602C4123EA29D100CB335A /* MedicineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineController.swift; sourceTree = "<group>"; };
 		5AF3F13723E8C906003D4B6D /* MedMateBuildWeek1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedMateBuildWeek1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF3F13A23E8C906003D4B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AF3F13C23E8C906003D4B6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				5AF3F15423E8CB0C003D4B6D /* ThemeViewController.swift */,
 				5AF3F15623E8CB16003D4B6D /* NotesViewController.swift */,
 				5AF3F15023E8CAB8003D4B6D /* MedicationsListViewController.swift */,
+				5A602C4123EA29D100CB335A /* MedicineController.swift */,
 				5AF3F15223E8CAE2003D4B6D /* AddMedicationDetailsViewController.swift */,
 				5AF3F14E23E8C9A7003D4B6D /* MedicationModel.swift */,
 				5AF3F14323E8C907003D4B6D /* Assets.xcassets */,
@@ -161,6 +164,7 @@
 				5AF3F15523E8CB0C003D4B6D /* ThemeViewController.swift in Sources */,
 				5AF3F13B23E8C906003D4B6D /* AppDelegate.swift in Sources */,
 				5AF3F15323E8CAE2003D4B6D /* AddMedicationDetailsViewController.swift in Sources */,
+				5A602C4223EA29D100CB335A /* MedicineController.swift in Sources */,
 				5AF3F15723E8CB16003D4B6D /* NotesViewController.swift in Sources */,
 				5AF3F15123E8CAB8003D4B6D /* MedicationsListViewController.swift in Sources */,
 				5AF3F14F23E8C9A7003D4B6D /* MedicationModel.swift in Sources */,
