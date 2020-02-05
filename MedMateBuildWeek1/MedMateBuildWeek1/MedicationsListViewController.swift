@@ -13,6 +13,7 @@ class MedicationsListViewController: UIViewController, UITableViewDelegate, UITa
     @IBOutlet weak var medicationsTableView: UITableView!
     
     var meds = [Medication]()
+    let medicineController = MedicineController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,12 +53,13 @@ class MedicationsListViewController: UIViewController, UITableViewDelegate, UITa
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "NotesForDoctorShowSegue" {
             if let notesVC = segue.destination as? NotesViewController {
-                //notesVC.delegate = self
+                //notesVC.delegate = self //need to pass over information
             }
         } else if segue.identifier == "AddMedicationShowSegue" {
             if let indexPath = medicationsTableView.indexPathForSelectedRow,
             let addMedicationsVC = segue.destination as? AddMedicationDetailsViewController {
                 addMedicationsVC.med = meds[indexPath.row]
+                addMedicationsVC.medsController = self.medicineController
             }
         }
     }

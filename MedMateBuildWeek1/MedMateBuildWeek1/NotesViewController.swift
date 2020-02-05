@@ -10,6 +10,8 @@ import UIKit
 
 class NotesViewController: UIViewController {
 
+    var medincineController: MedicineController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

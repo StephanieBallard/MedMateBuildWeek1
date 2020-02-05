@@ -9,8 +9,9 @@
 import UIKit
 
 class AddMedicationDetailsViewController: UIViewController {
-
+    // //need to pass medicine and medicine controller through segues
     var med: Medication?
+    var medsController: MedicineController?
     
     
     @IBOutlet weak var medicationNameLabel: UILabel!
@@ -19,6 +20,7 @@ class AddMedicationDetailsViewController: UIViewController {
     @IBOutlet weak var dosageTextField: UITextField!
     @IBOutlet weak var scheduleReminderLabel: UILabel!
     
+    @IBOutlet weak var datePicker: UIDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,11 @@ class AddMedicationDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func saveToMedicationListTapped(_ sender: UIButton) {
+        //guard let
+        //if let 
+    }
+    //TODO: unwrapp and convert to a double, Double(dosage) inside a variable and use that for our function
 
     /*
     // MARK: - Navigation
@@ -34,7 +41,9 @@ class AddMedicationDetailsViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+     //pass them a couple times
     }
     */
 
 }
+//add med and create it working

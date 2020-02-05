@@ -8,22 +8,34 @@
 
 import Foundation
 
-
+// need medicine we are updated, need it's medicine and dosage, need an alert to let the user know it's time to take medicine
+//func update(book: Book, withTitle title: String, reasonToRead: String) {
+//    guard let index = books.firstIndex(of: book) else { return }
+//    
+//    var scratch = book
+//    
+//    scratch.title = title
+//    scratch.reasonToRead = reasonToRead
+//    
+//    books.remove(at: index)
+//    books.insert(scratch, at: index)
+//}
 
 class MedicineController {
     
     var medicines = [Medication]()
+    var notesArray = [String]()
     
     func createMedicine(name: String, dose: Double ) {
         let newMed = Medication(name: name, dose: dose)
         
         medicines.append(newMed)
-        //TODO : saveToPersistence
+        saveToPersistence()
         }
-        //TODO: unwrapp and convert to a double
 
-    func createNote() {
-        
+    func createNote(note: String) {
+        notesArray.append(note)
+        saveToPersistence()
     }
     
     var medicationListURL: URL? {
@@ -34,7 +46,6 @@ class MedicineController {
         
         return medicationsURL
     }
-    //saving to a file make sure you change that name for plist
    
     func saveToPersistence() {
         

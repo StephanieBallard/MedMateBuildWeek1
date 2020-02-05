@@ -161,6 +161,9 @@
                                         <state key="normal" title="Save to Medication List">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="saveToMedicationListTapped:" destination="hMT-bT-eJs" eventType="touchUpInside" id="Phm-SV-ziw"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -180,6 +183,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="datePicker" destination="zWn-r7-xig" id="Ksr-m1-hAc"/>
                         <outlet property="dosageLabel" destination="c3a-FU-gwC" id="6Pj-do-b0c"/>
                         <outlet property="dosageTextField" destination="Sft-SQ-c1v" id="3eu-ND-txV"/>
                         <outlet property="medicationNameLabel" destination="7lR-ai-oJu" id="Obu-Z1-3EE"/>
