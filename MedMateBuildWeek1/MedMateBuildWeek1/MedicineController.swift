@@ -23,6 +23,10 @@ import Foundation
 
 class MedicineController {
     
+    init() {
+        loadFromPersistence()
+    }
+    
     var medicines = [Medication]()
     var notesArray = [String]()
     
@@ -57,6 +61,8 @@ class MedicineController {
         
         medicines.remove(at: index)
         medicines.insert(scratch, at: index)
+        
+        saveToPersistence()
     }
     
     
