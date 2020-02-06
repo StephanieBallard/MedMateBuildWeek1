@@ -12,11 +12,13 @@ struct Medication: Codable, Equatable {
     var name: String
     var dose: Double
     var date: Date
+    var note: String
     
-    init(name: String, dose: Double, date: Date = Date()) {
+    init(name: String, dose: Double, note: String, date: Date) {
         self.name = name
         self.dose = dose
         self.date = date
+        self.note = note
     }
     
 }

@@ -28,19 +28,16 @@ class MedicineController {
     }
     
     var medicines = [Medication]()
-    var notesArray = [String]()
+   
     
-    func createMedicine(name: String, dose: Double ) {
-        let newMed = Medication(name: name, dose: dose)
+    func createMedicine(name: String, dose: Double, note: String, date: Date ) {
+        let newMed = Medication(name: name, dose: dose, note: note, date: date)
         
         medicines.append(newMed)
         saveToPersistence()
         }
 
-    func createNote(note: String) {
-        notesArray.append(note)
-        saveToPersistence()
-    }
+    
     
     var medicationListURL: URL? {
         let fileManager = FileManager.default
@@ -51,13 +48,16 @@ class MedicineController {
         return medicationsURL
     }
    
-    func update(meds: Medication, name: String, dosage: Double) {
+    func update(meds: Medication, name: String, dosage: Double, note: String, date: Date) {
         guard let index = medicines.firstIndex(of: meds) else { return }
         
         var scratch = meds
         
         scratch.name = name
         scratch.dose = dosage
+        scratch.note = note
+        scratch.date = date
+        
         
         medicines.remove(at: index)
         medicines.insert(scratch, at: index)

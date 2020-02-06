@@ -35,7 +35,7 @@ class AddMedicationDetailsViewController: UIViewController {
         if let med = med {
             medsController?.update(meds: med, name: name, dosage: Double(dosage)!)
         } else {
-            medsController?.createMedicine(name: name, dose: Double(dosage)!)
+           
         }
         
         navigationController?.popViewController(animated: true)
