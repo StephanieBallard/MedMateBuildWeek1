@@ -13,7 +13,7 @@ class AddMedicationDetailsViewController: UIViewController {
     var med: Medication?
     var medsController: MedicineController?
     var themeHelper: ThemeHelper?
-    //var timer = Timer?
+    var timer: Timer?
     
     @IBOutlet weak var medicationNameLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
@@ -72,7 +72,23 @@ class AddMedicationDetailsViewController: UIViewController {
         
         navigationController?.popViewController(animated: true)
         
+
+        func startTimer() {
+                    func startTimer() {
+                        timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false, block: updateAlert(timer:))
+                }
+                func showAlert() {
+                        let alert = UIAlertController(title: "Medicine", message: "It's time to take your medication!", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "Medicine", style: .default, handler: nil))
+                        present(alert, animated: true)
+                    }
+            
+            func updateAlert(timer: Timer) {
+                        showAlert()
+                   }
+                }
     }
+        
     
     func setTheme() {
         guard let themePreference = themeHelper?.themePreference else { return }
