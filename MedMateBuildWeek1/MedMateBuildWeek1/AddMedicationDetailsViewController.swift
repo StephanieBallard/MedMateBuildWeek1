@@ -13,6 +13,7 @@ class AddMedicationDetailsViewController: UIViewController {
     var med: Medication?
     var medsController: MedicineController?
     var themeHelper: ThemeHelper?
+    //var timer = Timer?
     
     @IBOutlet weak var medicationNameLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
@@ -52,6 +53,8 @@ class AddMedicationDetailsViewController: UIViewController {
                 textViewDidChange(textView)
             
         }
+    
+    
     
     @IBAction func saveToMedicationListTapped(_ sender: UIBarButtonItem) {
         guard let name = nameTextField.text,
