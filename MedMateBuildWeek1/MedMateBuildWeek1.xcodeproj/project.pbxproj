@@ -84,7 +84,6 @@
 				5AF3F13A23E8C906003D4B6D /* AppDelegate.swift */,
 				5AF3F14523E8C907003D4B6D /* LaunchScreen.storyboard */,
 				5AF3F13C23E8C906003D4B6D /* SceneDelegate.swift */,
-				5AF3F14823E8C907003D4B6D /* Info.plist */,
 				5AF3F14323E8C907003D4B6D /* Assets.xcassets */,
 			);
 			path = resources;
@@ -113,6 +112,7 @@
 				5A51675123EDFE0E00F23402 /* View Controller */,
 				5A51675223EDFE2200F23402 /* Controller */,
 				5A51675323EDFE3400F23402 /* resources */,
+				5AF3F14823E8C907003D4B6D /* Info.plist */,
 			);
 			path = MedMateBuildWeek1;
 			sourceTree = "<group>";
