@@ -26,32 +26,32 @@
                                 <rect key="frame" x="20" y="335" width="374" height="483"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MedicationCell" rowHeight="101" id="CPk-gQ-OGu" customClass="MedicationTableViewCell" customModule="MedMateBuildWeek1" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="101"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MedicationCell" rowHeight="63" id="CPk-gQ-OGu" customClass="MedicationTableViewCell" customModule="MedMateBuildWeek1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CPk-gQ-OGu" id="wdz-eO-2Oa">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="101"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="63"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="0aX-Wy-T7B">
-                                                    <rect key="frame" x="20.5" y="15.5" width="333.5" height="70"/>
+                                                    <rect key="frame" x="20.5" y="19.5" width="333.5" height="24"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="QQa-42-0Tb">
                                                             <rect key="frame" x="0.0" y="0.0" width="333.5" height="24"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3v1-5R-Q57">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Medication" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3v1-5R-Q57">
                                                                     <rect key="frame" x="0.0" y="0.0" width="97" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dosage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAg-3w-CMg">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dosage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAg-3w-CMg">
                                                                     <rect key="frame" x="140" y="0.0" width="67" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMy-1n-f6C">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMy-1n-f6C">
                                                                     <rect key="frame" x="250" y="0.0" width="83.5" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <nil key="textColor"/>
@@ -59,14 +59,11 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Tx-rN-Pwc">
-                                                            <rect key="frame" x="143.5" y="40" width="46" height="30"/>
-                                                            <state key="normal" title="Button"/>
-                                                            <connections>
-                                                                <action selector="noteButtonTapped:" destination="CPk-gQ-OGu" eventType="touchUpInside" id="hxs-Sl-huM"/>
-                                                            </connections>
-                                                        </button>
                                                     </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="QQa-42-0Tb" firstAttribute="centerY" secondItem="0aX-Wy-T7B" secondAttribute="centerY" id="KXd-J5-mGZ"/>
+                                                        <constraint firstItem="QQa-42-0Tb" firstAttribute="centerX" secondItem="0aX-Wy-T7B" secondAttribute="centerX" id="TIa-lN-Qa9"/>
+                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -77,8 +74,8 @@
                                         <connections>
                                             <outlet property="dosageLabel" destination="fAg-3w-CMg" id="1I1-sh-RkS"/>
                                             <outlet property="medicationLabel" destination="3v1-5R-Q57" id="eP8-0k-5wH"/>
-                                            <outlet property="noteButton" destination="7Tx-rN-Pwc" id="EPM-4s-pg8"/>
                                             <outlet property="reminderLabel" destination="EMy-1n-f6C" id="ZGE-nl-lU3"/>
+                                            <segue destination="hMT-bT-eJs" kind="show" identifier="DetailShowSegue" id="GHJ-4X-i1B"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -87,10 +84,10 @@
                                 <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <items>
                                     <navigationItem id="3Hr-pY-YRF">
-                                        <barButtonItem key="leftBarButtonItem" title="Notes For Doctor" id="Hph-zZ-wx4">
+                                        <barButtonItem key="leftBarButtonItem" title="Theme Selection" id="Hph-zZ-wx4">
                                             <connections>
                                                 <action selector="notesForDoctorTapped:" destination="oZ9-2V-yZg" id="4bD-sY-P81"/>
-                                                <segue destination="3rx-4i-Iya" kind="show" identifier="NotesForDoctorShowSegue" id="3EW-3f-nTM"/>
+                                                <segue destination="PQz-or-XTw" kind="presentation" identifier="ThemeSelectionModalSegue" id="gvb-lx-5zb"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Add Medication" id="s6R-BA-h8M">
@@ -138,64 +135,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="P3s-Pl-Oq3">
-                                <rect key="frame" x="47" y="141" width="320" height="614"/>
+                                <rect key="frame" x="20" y="96" width="374" height="542"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medication Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lR-ai-oJu">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FU2-aD-AgZ">
-                                        <rect key="frame" x="0.0" y="66" width="320" height="34"/>
+                                        <rect key="frame" x="0.0" y="66" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dosage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3a-FU-gwC">
-                                        <rect key="frame" x="0.0" y="130" width="320" height="36"/>
+                                        <rect key="frame" x="0.0" y="130" width="374" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Dosage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sft-SQ-c1v">
-                                        <rect key="frame" x="0.0" y="196" width="320" height="34"/>
+                                        <rect key="frame" x="0.0" y="196" width="374" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule Reminder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5I-hk-K3e">
-                                        <rect key="frame" x="0.0" y="260" width="320" height="36"/>
+                                        <rect key="frame" x="0.0" y="260" width="374" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zWn-r7-xig">
-                                        <rect key="frame" x="0.0" y="326" width="320" height="216"/>
+                                        <rect key="frame" x="0.0" y="326" width="374" height="216"/>
                                     </datePicker>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4o-ld-wWE">
-                                        <rect key="frame" x="0.0" y="572" width="320" height="42"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Save to Medication List">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="saveToMedicationListTapped:" destination="hMT-bT-eJs" eventType="touchUpInside" id="Phm-SV-ziw"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="P3s-Pl-Oq3" firstAttribute="centerX" secondItem="Bmg-E5-yKb" secondAttribute="centerX" id="BZJ-Nf-C6j"/>
-                            <constraint firstItem="P3s-Pl-Oq3" firstAttribute="centerY" secondItem="Bmg-E5-yKb" secondAttribute="centerY" id="oC6-ds-H9g"/>
+                            <constraint firstItem="P3s-Pl-Oq3" firstAttribute="leading" secondItem="vNp-nO-Lyn" secondAttribute="leading" constant="20" id="41y-41-CzM"/>
+                            <constraint firstItem="vNp-nO-Lyn" firstAttribute="trailing" secondItem="P3s-Pl-Oq3" secondAttribute="trailing" constant="20" id="KRe-eq-0mw"/>
+                            <constraint firstItem="P3s-Pl-Oq3" firstAttribute="top" secondItem="vNp-nO-Lyn" secondAttribute="top" constant="8" id="Td4-No-asP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vNp-nO-Lyn"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Medication" id="mkP-Zt-IGn">
-                        <barButtonItem key="rightBarButtonItem" title="Theme" id="mL5-UP-Afy">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="mL5-UP-Afy">
                             <connections>
-                                <segue destination="PQz-or-XTw" kind="presentation" identifier="ModalSegueThemeSelection" id="kiF-bS-P5v"/>
+                                <action selector="saveToMedicationListTapped:" destination="hMT-bT-eJs" id="XF8-MS-Bnz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -210,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gou-Kr-Kqb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1655" y="45"/>
+            <point key="canvasLocation" x="1653.6231884057972" y="44.866071428571423"/>
         </scene>
         <!--Theme View Controller-->
         <scene sceneID="DKs-p9-fHU">
@@ -270,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJV-BD-A8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2393" y="45"/>
+            <point key="canvasLocation" x="896" y="779"/>
         </scene>
         <!--Notes-->
         <scene sceneID="BOa-gH-uc1">
@@ -310,4 +297,7 @@
     <resources>
         <image name="healthcare-technology" width="825" height="825"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="GHJ-4X-i1B"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -18,8 +18,6 @@ class ThemeHelper {
         guard themePreference == nil
             else { return }
         
-        setThemePreferenceToDark()
-        
     }
     
     var themePreference: String? {

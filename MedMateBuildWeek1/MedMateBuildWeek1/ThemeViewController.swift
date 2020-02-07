@@ -28,22 +28,6 @@ class ThemeViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    func setTheme() {
-        guard let themePreference = themeHelper?.themePreference else { return }
-        var backgroundColor: UIColor!
-        
-        switch themePreference {
-        case "dark":
-            backgroundColor = .darkGray
-        case "pink":
-            backgroundColor = .systemPink
-        default:
-            break
-        }
-        
-        view.backgroundColor = backgroundColor
-        
-    }
     
     
     /*
