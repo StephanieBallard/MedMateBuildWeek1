@@ -70,23 +70,23 @@ class AddMedicationDetailsViewController: UIViewController {
             
         }
         
+        func startTimer() {
+                func startTimer() {
+                    timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false, block: updateAlert(timer:))
+            }
+            func showAlert() {
+                    let alert = UIAlertController(title: "Medicine", message: "It's time to take your medication!", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Medicine", style: .default, handler: nil))
+                    present(alert, animated: true)
+                }
+        
+        func updateAlert(timer: Timer) {
+                    showAlert()
+               }
+            }
+        
         navigationController?.popViewController(animated: true)
         
-
-        func startTimer() {
-                    func startTimer() {
-                        timer = Timer.scheduledTimer(withTimeInterval: 5, repeats: false, block: updateAlert(timer:))
-                }
-                func showAlert() {
-                        let alert = UIAlertController(title: "Medicine", message: "It's time to take your medication!", preferredStyle: .alert)
-                        alert.addAction(UIAlertAction(title: "Medicine", style: .default, handler: nil))
-                        present(alert, animated: true)
-                    }
-            
-            func updateAlert(timer: Timer) {
-                        showAlert()
-                   }
-                }
     }
         
     
