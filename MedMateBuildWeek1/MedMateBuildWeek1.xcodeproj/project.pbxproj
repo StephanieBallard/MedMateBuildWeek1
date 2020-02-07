@@ -17,7 +17,6 @@
 		5AF3F15123E8CAB8003D4B6D /* MedicationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F15023E8CAB8003D4B6D /* MedicationsListViewController.swift */; };
 		5AF3F15323E8CAE2003D4B6D /* AddMedicationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F15223E8CAE2003D4B6D /* AddMedicationDetailsViewController.swift */; };
 		5AF3F15523E8CB0C003D4B6D /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F15423E8CB0C003D4B6D /* ThemeViewController.swift */; };
-		5AF3F15723E8CB16003D4B6D /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F15623E8CB16003D4B6D /* NotesViewController.swift */; };
 		5AF3F15923E8CDE8003D4B6D /* MedicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F15823E8CDE8003D4B6D /* MedicationTableViewCell.swift */; };
 		5AF3F15B23E8E490003D4B6D /* ThemeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF3F15A23E8E490003D4B6D /* ThemeHelper.swift */; };
 /* End PBXBuildFile section */
@@ -35,7 +34,6 @@
 		5AF3F15023E8CAB8003D4B6D /* MedicationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsListViewController.swift; sourceTree = "<group>"; };
 		5AF3F15223E8CAE2003D4B6D /* AddMedicationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationDetailsViewController.swift; sourceTree = "<group>"; };
 		5AF3F15423E8CB0C003D4B6D /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
-		5AF3F15623E8CB16003D4B6D /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		5AF3F15823E8CDE8003D4B6D /* MedicationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationTableViewCell.swift; sourceTree = "<group>"; };
 		5AF3F15A23E8E490003D4B6D /* ThemeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +49,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A51675023EDFDF200F23402 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				5AF3F14023E8C906003D4B6D /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		5A51675123EDFE0E00F23402 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5AF3F15023E8CAB8003D4B6D /* MedicationsListViewController.swift */,
+				5AF3F15823E8CDE8003D4B6D /* MedicationTableViewCell.swift */,
+				5AF3F15223E8CAE2003D4B6D /* AddMedicationDetailsViewController.swift */,
+				5AF3F15423E8CB0C003D4B6D /* ThemeViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		5A51675223EDFE2200F23402 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5AF3F14E23E8C9A7003D4B6D /* MedicationModel.swift */,
+				5AF3F15A23E8E490003D4B6D /* ThemeHelper.swift */,
+				5A602C4123EA29D100CB335A /* MedicineController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5A51675323EDFE3400F23402 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				5AF3F13A23E8C906003D4B6D /* AppDelegate.swift */,
+				5AF3F14523E8C907003D4B6D /* LaunchScreen.storyboard */,
+				5AF3F13C23E8C906003D4B6D /* SceneDelegate.swift */,
+				5AF3F14823E8C907003D4B6D /* Info.plist */,
+				5AF3F14323E8C907003D4B6D /* Assets.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
 		5AF3F12E23E8C906003D4B6D = {
 			isa = PBXGroup;
 			children = (
@@ -70,20 +109,10 @@
 		5AF3F13923E8C906003D4B6D /* MedMateBuildWeek1 */ = {
 			isa = PBXGroup;
 			children = (
-				5AF3F13A23E8C906003D4B6D /* AppDelegate.swift */,
-				5AF3F13C23E8C906003D4B6D /* SceneDelegate.swift */,
-				5AF3F14023E8C906003D4B6D /* Main.storyboard */,
-				5AF3F15423E8CB0C003D4B6D /* ThemeViewController.swift */,
-				5AF3F15623E8CB16003D4B6D /* NotesViewController.swift */,
-				5AF3F15823E8CDE8003D4B6D /* MedicationTableViewCell.swift */,
-				5AF3F15023E8CAB8003D4B6D /* MedicationsListViewController.swift */,
-				5AF3F15223E8CAE2003D4B6D /* AddMedicationDetailsViewController.swift */,
-				5A602C4123EA29D100CB335A /* MedicineController.swift */,
-				5AF3F14E23E8C9A7003D4B6D /* MedicationModel.swift */,
-				5AF3F15A23E8E490003D4B6D /* ThemeHelper.swift */,
-				5AF3F14323E8C907003D4B6D /* Assets.xcassets */,
-				5AF3F14523E8C907003D4B6D /* LaunchScreen.storyboard */,
-				5AF3F14823E8C907003D4B6D /* Info.plist */,
+				5A51675023EDFDF200F23402 /* StoryBoard */,
+				5A51675123EDFE0E00F23402 /* View Controller */,
+				5A51675223EDFE2200F23402 /* Controller */,
+				5A51675323EDFE3400F23402 /* resources */,
 			);
 			path = MedMateBuildWeek1;
 			sourceTree = "<group>";
@@ -165,7 +194,6 @@
 				5AF3F13B23E8C906003D4B6D /* AppDelegate.swift in Sources */,
 				5AF3F15323E8CAE2003D4B6D /* AddMedicationDetailsViewController.swift in Sources */,
 				5A602C4223EA29D100CB335A /* MedicineController.swift in Sources */,
-				5AF3F15723E8CB16003D4B6D /* NotesViewController.swift in Sources */,
 				5AF3F15123E8CAB8003D4B6D /* MedicationsListViewController.swift in Sources */,
 				5AF3F14F23E8C9A7003D4B6D /* MedicationModel.swift in Sources */,
 				5AF3F13D23E8C906003D4B6D /* SceneDelegate.swift in Sources */,
